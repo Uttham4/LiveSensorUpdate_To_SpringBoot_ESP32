@@ -1,0 +1,1 @@
+I have used XAMPP to use appache server and mySQL database. I also included the php code for inserting data into the db. Don't forget to change the ssid and password also for the link change the ip address and directory of the php file. For retriving the sensor data from db i have used spring boot application which continously reads newest data from the db.
