@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Automatic Data Reload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        #dataContainer {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <meta http-equiv="refresh" content="2">
+</head>
+<body>
+    <div class="container">
+        <h1>DISTANCE USING ULTRASONIC</h1>
+        <div id="dataContainer" th:text="${'ID: ' + result + ', DISTANCE IN INCHES: ' + distanceinch + ' inches, DISTANCE IN CM: ' + distancecm + ' cm'}">
+            <!-- Data will be displayed here -->   
+        </div>
+    </div>
+</body>
+</html>
